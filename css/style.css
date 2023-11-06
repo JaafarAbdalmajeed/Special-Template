@@ -1,0 +1,87 @@
+:root{
+    --main-color:rgb(255, 136, 0);
+}
+body{
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.landing-page{
+    background-image: url(/images/c716b153427a8ac1c9e4dbab1cd41d21.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay{
+    background-color: #000000c9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.header-area{
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    padding: 10px;
+}
+
+.header-area .logo{
+    width: 300px;
+    padding: 15px;
+    font-size: larger;
+}
+
+.header-area .links{
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 16px ;
+    text-align: right;
+}
+
+.header-area .links li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header-area .links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-area .links li a:hover,
+.header-area .links li a.active {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.introduction-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    text-align: center;
+}
+
+.introduction-text h1{
+    font-size: 40px;
+    margin: 0 0 12px;
+}
+
+.introduction-text h1 span{
+    color: var(--main-color);
+}
+
+.introduction-text p{
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}  
