@@ -8,9 +8,12 @@ document.querySelector(".toggle-settings .fa-gear").onclick = function() {
 //Switch Colors
 const colorsLi = document.querySelectorAll(".color-list li");
 
+//loop on item item
 colorsLi.forEach( li => {
+    //Click on every list item
     li.addEventListener("click", (e) => {
-        console.log(e.target.dataset.color)
+        //set color on root
+        document.documentElement.style.setProperty('--main-color', e.target.dataset.color)
     })
 })
 

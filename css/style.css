@@ -1,5 +1,5 @@
 :root{
-    --main-color:rgb(255, 136, 0);
+    --main-color:rgb(235, 126, 0);
 }
 body{
     font-family: 'Open-Sans', sans-serif;
@@ -64,7 +64,7 @@ body{
 }
 
 .settings-box .option-box .color-list li:first-child{
-    background-color: var(--main-color);
+    background-color: rgba(239, 157, 5, 0.788) ;
 }
 
 .settings-box .option-box .color-list li:nth-child(2){
