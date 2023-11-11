@@ -1,3 +1,17 @@
+let colorStorage = localStorage.getItem("color-option")
+
+if(colorStorage !== null){
+    document.documentElement.style.setProperty("--main-color", colorStorage)
+
+    document.querySelectorAll("color-list li").forEach(element => {
+        element.classList.remove("active")
+        if(element.dataset.color === colorStorage){
+            element.classList.add("active")
+        }
+    })
+
+}
+
 //Toggle Spin icon 
 document.querySelector(".toggle-settings .fa-gear").onclick = function() {
     this.classList.toggle("fa-spin");
@@ -13,7 +27,13 @@ colorsLi.forEach( li => {
     //Click on every list item
     li.addEventListener("click", (e) => {
         //set color on root
-        document.documentElement.style.setProperty('--main-color', e.target.dataset.color)
+        document.documentElement.style.setProperty("--main-color", e.target.dataset.color)
+        localStorage.setItem("color-option", e.target.dataset.color)
+        e.target.parentElement.querySelectorAll(".active").forEach(element => {
+            element.classList.remove("active")
+        })
+
+        e.target.classList.add("active")
     })
 })
 

@@ -11,7 +11,7 @@ body{
     position: fixed;
     left: -200px;
     top: 0;
-    background-color: #fffffff2;
+    background-color: #fff;
     width: 200px;
     z-index: 100;
     min-height: 100vh;
@@ -38,7 +38,10 @@ body{
 }
 
 .settings-box .option-box{
-    padding: 20px;
+    padding: 10px;
+    margin: 15px;
+    background: #EEE;
+    text-align: center;
 }
 .settings-box .option-box h4{
     margin: 0;
@@ -48,6 +51,7 @@ body{
     list-style: none;
     text-align: center;
     padding: 0;
+    margin: 0;
 }
 .settings-box .option-box .color-list li{
     width: 20px;
